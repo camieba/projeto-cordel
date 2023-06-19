@@ -1,28 +1,45 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Passion+One:wght@400;700&display=swap');
+
+
 * {margin: 0px;
     padding: 0px;
+    
 }
 
-html, body {min-height: 100%;
 
+:root { --fonte01: Verdana, Geneva, Tahoma, sans-serif;
+        --fonte02: 'Passion One', cursive;
+        --fonte03: 'Bad Script', cursive;
+}
+
+
+html, body {min-height: 100%;
+   
+            
 }
 
 header {background-color: black;
         color: white;
         margin: auto;
         text-align: center;
-        margin-bottom: 40px;
+        margin-bottom: 40px;    
 
 }
 
 header > h1 {padding-top: 50px;
             font-variant: small-caps;
+            font-family: var(--fonte02);
+            font-size: 10vw;
+            
+            
 }
 
 header > p {padding-bottom: 50px;
             padding-top: 10px;
-
+            font-family: var(--fonte01);
+            font-size: 2vw;
  }
 
 a {text-decoration: none;
@@ -37,8 +54,10 @@ a:hover {text-decoration: underline;
 section {padding-top: 10vh;
         padding-bottom: 10vh;
         padding-left: 25px; 
-        line-height: 32px;
-       
+        line-height: 1.5em;
+        font-family: var(--fonte03);
+        font-size: 3.5vw;
+
 }
 
 section.branco {background-color: white;
@@ -46,20 +65,36 @@ section.branco {background-color: white;
 }
 
 section.imagem {background-color: rgb(162, 160, 160);
-
-
+                box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.613);
+                background-size: cover;
+                background-attachment: fixed;
 }
 
-section.imagem > p {background-color: rgba(0, 0, 0, 0.159);
+section.imagem > p {background-color: rgba(0, 0, 0, 0.334);
                     color: white;
-                    width: 300px;
+                    display: inline-block;
+                    padding: 5px;
+                    text-shadow: 1px 1px 0px black;
+                    border-radius: 0px 5px 0px 5px;
                     
 
 }
 
+section > p {padding-bottom: 1.5em;
 
+}
 
+section#img1 {background-image: url('imagens/background001.jpg');
+            background-position: right center;
+            
 
+}
+
+section#img2 {background-image: url('imagens/background002.jpg');
+            background-position: center center;
+            
+
+}
 
 footer {background-color: black;
         color: white;  
@@ -67,6 +102,8 @@ footer {background-color: black;
         padding: 5px;  
         text-align: center;
         margin-top: 20px;
+        font-family: var(--fonte01);
+        font-size: 14px;
 
 
 }
